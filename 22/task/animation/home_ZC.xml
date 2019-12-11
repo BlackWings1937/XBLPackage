@@ -1,0 +1,677 @@
+<dragonBones name="转场内置" frameRate="24" version="2.3">
+ <armature name="home_ZC">
+  <bone name="01">
+   <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="02">
+   <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="03">
+   <transform x="0" y="-0.05" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="04">
+   <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="05">
+   <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="06">
+   <transform x="0" y="0" skX="0" skY="0" scX="0.0822" scY="0.0822"/>
+  </bone>
+  <skin name="default">
+   <slot name="01" parent="01" z="0">
+    <display name="ZC_small01_01" type="armature">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1"/>
+    </display>
+   </slot>
+   <slot name="02" parent="02" z="1">
+    <display name="ZC_small01_02" type="armature">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1"/>
+    </display>
+   </slot>
+   <slot name="03" parent="03" z="2">
+    <display name="ZC_small01_03" type="armature">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1"/>
+    </display>
+   </slot>
+   <slot name="04" parent="04" z="3">
+    <display name="ZC_small01_04" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="284" pY="283.95"/>
+    </display>
+   </slot>
+   <slot name="05" parent="05" z="4">
+    <display name="ZC_small01_05" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="196.95" pY="196.95"/>
+    </display>
+   </slot>
+   <slot name="06" parent="06" z="5">
+    <display name="ZC_small01_06" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="144.4" pY="127.35"/>
+    </display>
+   </slot>
+  </skin>
+  <animation name="0" fadeInTime="0" duration="18" scale="1" loop="1" autoTween="1" tweenEasing="NaN">
+   <timeline name="01" scale="1" offset="0">
+    <frame duration="6" displayIndex="-1"/>
+    <frame z="0" tweenEasing="0" duration="7">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0269" scY="0.0269" pX="0" pY="0"/>
+    </frame>
+    <frame z="0" tweenEasing="0" duration="4">
+     <transform x="0" y="0" skX="0" skY="0" scX="1.0467" scY="1.0467" pX="0" pY="0"/>
+    </frame>
+    <frame z="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02" scale="1" offset="0">
+    <frame duration="5" displayIndex="-1"/>
+    <frame z="1" tweenEasing="0" duration="7">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.035" scY="0.035" pX="0" pY="0"/>
+    </frame>
+    <frame z="1" tweenEasing="0" duration="4">
+     <transform x="0" y="0" skX="0" skY="0" scX="1.0467" scY="1.0467" pX="0" pY="0"/>
+    </frame>
+    <frame z="1" duration="2">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03" scale="1" offset="0">
+    <frame duration="4" displayIndex="-1"/>
+    <frame z="2" tweenEasing="0" duration="7">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0446" scY="0.0446" pX="0" pY="0"/>
+    </frame>
+    <frame z="2" tweenEasing="0" duration="4">
+     <transform x="0" y="-0.05" skX="0" skY="0" scX="1.0467" scY="1.0467" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="2" duration="3">
+     <transform x="0" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+   </timeline>
+   <timeline name="04" scale="1" offset="0">
+    <frame duration="3" displayIndex="-1"/>
+    <frame z="3" tweenEasing="0" duration="7">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0597" scY="0.0597" pX="0" pY="0"/>
+    </frame>
+    <frame z="3" tweenEasing="0" duration="4">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1.0467" scY="1.0467" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="3" duration="4">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+   </timeline>
+   <timeline name="05" scale="1" offset="0">
+    <frame duration="1" displayIndex="-1"/>
+    <frame z="4" tweenEasing="0" duration="8">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0822" scY="0.0822" pX="0" pY="0"/>
+    </frame>
+    <frame z="4" tweenEasing="0" duration="4">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1.0467" scY="1.0467" pX="0" pY="0"/>
+    </frame>
+    <frame z="4" duration="5">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="06" scale="1" offset="0">
+    <frame z="5" tweenEasing="0" sound="ui006.mp3" duration="8">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0822" scY="0.0822" pX="0" pY="0"/>
+    </frame>
+    <frame z="5" tweenEasing="0" duration="4">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1.0467" scY="1.0467" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="5" duration="6">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+   </timeline>
+  </animation>
+  <animation name="1" fadeInTime="0.2" duration="2" scale="3" loop="0" autoTween="1" tweenEasing="2">
+   <timeline name="01" scale="1" offset="0">
+    <frame z="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+    <frame z="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02" scale="1" offset="0.1">
+    <frame z="1" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+    <frame z="1" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03" scale="1" offset="0.2">
+    <frame z="2" duration="1">
+     <transform x="0" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="2" duration="1">
+     <transform x="0" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+   </timeline>
+   <timeline name="04" scale="1" offset="0.3">
+    <frame z="3" duration="1">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="3" duration="1">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+   </timeline>
+   <timeline name="05" scale="1" offset="0.4">
+    <frame z="4" duration="1">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+    <frame z="4" duration="1">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="06" scale="1" offset="0">
+    <frame z="5" duration="2">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+   </timeline>
+  </animation>
+  <animation name="2" fadeInTime="0" duration="11" scale="1" loop="1" autoTween="1" tweenEasing="NaN">
+   <timeline name="01" scale="1" offset="0">
+    <frame z="0" tweenEasing="0" duration="7">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+    <frame z="0" tweenEasing="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0269" scY="0.0269" pX="0" pY="0"/>
+    </frame>
+    <frame duration="3" displayIndex="-1"/>
+   </timeline>
+   <timeline name="02" scale="1" offset="0">
+    <frame z="1" tweenEasing="0" duration="8">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+    <frame z="1" tweenEasing="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.035" scY="0.035" pX="0" pY="0"/>
+    </frame>
+    <frame duration="2" displayIndex="-1"/>
+   </timeline>
+   <timeline name="03" scale="1" offset="0">
+    <frame z="2" tweenEasing="0" duration="9">
+     <transform x="0" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="2" tweenEasing="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0446" scY="0.0446" pX="0" pY="0"/>
+    </frame>
+    <frame duration="1" displayIndex="-1"/>
+   </timeline>
+   <timeline name="04" scale="1" offset="0">
+    <frame z="3" tweenEasing="0" duration="9">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="3" tweenEasing="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0597" scY="0.0597" pX="0" pY="0"/>
+    </frame>
+    <frame duration="1" displayIndex="-1"/>
+   </timeline>
+   <timeline name="05" scale="1" offset="0">
+    <frame z="4" tweenEasing="0" duration="9">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+    <frame z="4" tweenEasing="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0822" scY="0.0822" pX="0" pY="0"/>
+    </frame>
+    <frame duration="1" displayIndex="-1"/>
+   </timeline>
+   <timeline name="06" scale="1" offset="0">
+    <frame z="5" tweenEasing="0" sound="sound008.mp3" duration="9">
+     <transform x="-0.05" y="-0.05" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0.049"/>
+    </frame>
+    <frame z="5" tweenEasing="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="0.0822" scY="0.0822" pX="0" pY="0"/>
+    </frame>
+    <frame duration="1" displayIndex="-1"/>
+   </timeline>
+  </animation>
+ </armature>
+ <armature name="ZC_small01_01">
+  <bone name="di">
+   <transform x="-0.25" y="-0.25" skX="0" skY="0" scX="3.6128" scY="3.6128"/>
+  </bone>
+  <bone name="ZC_small01_07a">
+   <transform x="-126.9" y="-279" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="ZC_small01_07b">
+   <transform x="128.65" y="279.3" skX="180" skY="180" scX="1" scY="1"/>
+  </bone>
+  <bone name="ZC_small01_08a">
+   <transform x="393.2" y="-241.15" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="ZC_small01_08b">
+   <transform x="-397" y="235.55" skX="180" skY="180" scX="1" scY="1"/>
+  </bone>
+  <skin name="default">
+   <slot name="di" parent="di" z="0">
+    <display name="ZC_small01_06s" type="image">
+     <transform x="0.1" y="0.1" skX="0" skY="0" scX="1" scY="1" pX="184.15" pY="184.2"/>
+    </display>
+   </slot>
+   <slot name="ZC_small01_07a" parent="ZC_small01_07a" z="1">
+    <display name="ZC_small01_07a" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="451" pY="307.6"/>
+    </display>
+   </slot>
+   <slot name="ZC_small01_07b" parent="ZC_small01_07b" z="2">
+    <display name="ZC_small01_07a" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="451" pY="307.6"/>
+    </display>
+   </slot>
+   <slot name="ZC_small01_08a" parent="ZC_small01_08a" z="3">
+    <display name="ZC_small01_08a" type="image">
+     <transform x="-0.25" y="0.05" skX="0" skY="0" scX="1" scY="1" pX="164.15" pY="265.7"/>
+    </display>
+   </slot>
+   <slot name="ZC_small01_08b" parent="ZC_small01_08b" z="4">
+    <display name="ZC_small01_08a" type="image">
+     <transform x="-0.25" y="0.05" skX="0" skY="0" scX="1" scY="1" pX="164.15" pY="265.7"/>
+    </display>
+   </slot>
+  </skin>
+  <animation name="0" fadeInTime="0.3" duration="1" scale="1" loop="1" autoTween="1" tweenEasing="NaN">
+   <timeline name="di" scale="1" offset="0">
+    <frame z="0" duration="1">
+     <transform x="-0.25" y="-0.25" skX="0" skY="0" scX="3.6128" scY="3.6128" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="ZC_small01_07a" scale="1" offset="0">
+    <frame z="1" duration="1">
+     <transform x="-126.9" y="-279" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="ZC_small01_07b" scale="1" offset="0">
+    <frame z="2" duration="1">
+     <transform x="128.65" y="279.3" skX="180" skY="180" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="ZC_small01_08a" scale="1" offset="0">
+    <frame z="3" duration="1">
+     <transform x="393.2" y="-241.15" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="ZC_small01_08b" scale="1" offset="0">
+    <frame z="4" duration="1">
+     <transform x="-397" y="235.55" skX="180" skY="180" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+  </animation>
+ </armature>
+ <armature name="ZC_small01_02">
+  <bone name="02di">
+   <transform x="0.05" y="0" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="02di_0">
+   <transform x="0.1" y="0" skX="36" skY="36" scX="1" scY="1"/>
+  </bone>
+  <bone name="02di_1">
+   <transform x="0.1" y="0" skX="72" skY="72" scX="1" scY="1"/>
+  </bone>
+  <bone name="02di_2">
+   <transform x="0.1" y="0" skX="108.02" skY="108.02" scX="0.999" scY="0.999"/>
+  </bone>
+  <bone name="02di_3">
+   <transform x="0.1" y="0" skX="144.13" skY="144.13" scX="0.9974" scY="0.9974"/>
+  </bone>
+  <bone name="02di_4">
+   <transform x="0.1" y="0" skX="-179.97" skY="-179.97" scX="0.9974" scY="0.9974"/>
+  </bone>
+  <bone name="02di_5">
+   <transform x="0.1" y="0" skX="-143.93" skY="-143.93" scX="0.9958" scY="0.9958"/>
+  </bone>
+  <bone name="02di_6">
+   <transform x="0.1" y="0" skX="-107.81" skY="-107.81" scX="0.9948" scY="0.9948"/>
+  </bone>
+  <bone name="02di_7">
+   <transform x="0.1" y="0.05" skX="-71.93" skY="-71.93" scX="0.9939" scY="0.9939"/>
+  </bone>
+  <bone name="02di_8">
+   <transform x="0.1" y="0.1" skX="-38.28" skY="-37.31" scX="0.9923" scY="0.9924"/>
+  </bone>
+  <bone name="07a">
+   <transform x="213.25" y="-95.45" skX="90.15" skY="90.15" scX="0.7615" scY="0.7615"/>
+  </bone>
+  <bone name="07b">
+   <transform x="-209.75" y="97.8" skX="-89.85" skY="-89.85" scX="0.7615" scY="0.7615"/>
+  </bone>
+  <bone name="08a">
+   <transform x="182.25" y="300.15" skX="90.15" skY="90.15" scX="0.7615" scY="0.7615"/>
+  </bone>
+  <bone name="08b">
+   <transform x="-178.5" y="-301.1" skX="-89.85" skY="-89.85" scX="0.7615" scY="0.7615"/>
+  </bone>
+  <skin name="default">
+   <slot name="02di" parent="02di" z="0">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.2" y="-134.05" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_0" parent="02di_0" z="1">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.3" y="-134.05" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_1" parent="02di_1" z="2">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.3" y="-134" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_2" parent="02di_2" z="3">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.2" y="-133.95" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_3" parent="02di_3" z="4">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.25" y="-133.95" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_4" parent="02di_4" z="5">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.25" y="-133.9" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_5" parent="02di_5" z="6">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.2" y="-133.95" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_6" parent="02di_6" z="7">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.15" y="-133.95" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_7" parent="02di_7" z="8">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.2" y="-133.95" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="02di_8" parent="02di_8" z="9">
+    <display name="ZC_small01_02di" type="image">
+     <transform x="-229.15" y="-133.95" skX="0" skY="0" scX="1" scY="1" pX="229.8" pY="142.1"/>
+    </display>
+   </slot>
+   <slot name="07a" parent="07a" z="10">
+    <display name="ZC_small01_07a" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="451" pY="307.6"/>
+    </display>
+   </slot>
+   <slot name="07b" parent="07b" z="11">
+    <display name="ZC_small01_07a" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="451" pY="307.6"/>
+    </display>
+   </slot>
+   <slot name="08a" parent="08a" z="12">
+    <display name="ZC_small01_08a" type="image">
+     <transform x="0.4" y="0.1" skX="0" skY="0" scX="1" scY="1" pX="164.15" pY="265.7"/>
+    </display>
+   </slot>
+   <slot name="08b" parent="08b" z="13">
+    <display name="ZC_small01_08a" type="image">
+     <transform x="0.4" y="0.05" skX="0" skY="0" scX="1" scY="1" pX="164.15" pY="265.7"/>
+    </display>
+   </slot>
+  </skin>
+  <animation name="0" fadeInTime="0.3" duration="1" scale="1" loop="1" autoTween="1" tweenEasing="NaN">
+   <timeline name="02di" scale="1" offset="0">
+    <frame z="0" duration="1">
+     <transform x="0.05" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_0" scale="1" offset="0">
+    <frame z="1" duration="1">
+     <transform x="0.1" y="0" skX="36" skY="36" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_1" scale="1" offset="0">
+    <frame z="2" duration="1">
+     <transform x="0.1" y="0" skX="72" skY="72" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_2" scale="1" offset="0">
+    <frame z="3" duration="1">
+     <transform x="0.1" y="0" skX="108.02" skY="108.02" scX="0.999" scY="0.999" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_3" scale="1" offset="0">
+    <frame z="4" duration="1">
+     <transform x="0.1" y="0" skX="144.13" skY="144.13" scX="0.9974" scY="0.9974" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_4" scale="1" offset="0">
+    <frame z="5" duration="1">
+     <transform x="0.1" y="0" skX="-179.97" skY="-179.97" scX="0.9974" scY="0.9974" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_5" scale="1" offset="0">
+    <frame z="6" duration="1">
+     <transform x="0.1" y="0" skX="-143.93" skY="-143.93" scX="0.9958" scY="0.9958" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_6" scale="1" offset="0">
+    <frame z="7" duration="1">
+     <transform x="0.1" y="0" skX="-107.81" skY="-107.81" scX="0.9948" scY="0.9948" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_7" scale="1" offset="0">
+    <frame z="8" duration="1">
+     <transform x="0.1" y="0.05" skX="-71.93" skY="-71.93" scX="0.9939" scY="0.9939" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="02di_8" scale="1" offset="0">
+    <frame z="9" duration="1">
+     <transform x="0.1" y="0.1" skX="-38.28" skY="-37.31" scX="0.9923" scY="0.9924" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="07a" scale="1" offset="0">
+    <frame z="10" duration="1">
+     <transform x="213.25" y="-95.45" skX="90.15" skY="90.15" scX="0.7615" scY="0.7615" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="07b" scale="1" offset="0">
+    <frame z="11" duration="1">
+     <transform x="-209.75" y="97.8" skX="-89.85" skY="-89.85" scX="0.7615" scY="0.7615" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="08a" scale="1" offset="0">
+    <frame z="12" duration="1">
+     <transform x="182.25" y="300.15" skX="90.15" skY="90.15" scX="0.7615" scY="0.7615" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="08b" scale="1" offset="0">
+    <frame z="13" duration="1">
+     <transform x="-178.5" y="-301.1" skX="-89.85" skY="-89.85" scX="0.7615" scY="0.7615" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+  </animation>
+ </armature>
+ <armature name="ZC_small01_03">
+  <bone name="03di">
+   <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1"/>
+  </bone>
+  <bone name="03di_0">
+   <transform x="0.05" y="0" skX="36" skY="36" scX="1" scY="1"/>
+  </bone>
+  <bone name="03di_1">
+   <transform x="0.05" y="0" skX="72" skY="72" scX="1" scY="1"/>
+  </bone>
+  <bone name="03di_2">
+   <transform x="0.05" y="0" skX="108.02" skY="108.02" scX="0.999" scY="0.999"/>
+  </bone>
+  <bone name="03di_3">
+   <transform x="0.1" y="0" skX="144.13" skY="144.13" scX="0.9974" scY="0.9974"/>
+  </bone>
+  <bone name="03di_4">
+   <transform x="0.1" y="0" skX="-179.97" skY="-179.97" scX="0.9974" scY="0.9974"/>
+  </bone>
+  <bone name="03di_5">
+   <transform x="0.1" y="0" skX="-143.93" skY="-143.93" scX="0.9958" scY="0.9958"/>
+  </bone>
+  <bone name="03di_6">
+   <transform x="0.1" y="0" skX="-107.81" skY="-107.81" scX="0.9948" scY="0.9948"/>
+  </bone>
+  <bone name="03di_7">
+   <transform x="0.05" y="0" skX="-71.93" skY="-71.93" scX="0.9939" scY="0.9939"/>
+  </bone>
+  <bone name="03di_8">
+   <transform x="0.05" y="0" skX="-36.84" skY="-35.86" scX="0.9923" scY="0.9924"/>
+  </bone>
+  <bone name="07a">
+   <transform x="-78.8" y="-172.05" skX="0" skY="0" scX="0.6184" scY="0.6184"/>
+  </bone>
+  <bone name="07b">
+   <transform x="80.1" y="169.35" skX="180" skY="180" scX="0.6184" scY="0.6184"/>
+  </bone>
+  <bone name="08a">
+   <transform x="242.85" y="-148.65" skX="0" skY="0" scX="0.6184" scY="0.6184"/>
+  </bone>
+  <bone name="08b">
+   <transform x="-244.6" y="147.65" skX="180" skY="180" scX="0.6184" scY="0.6184"/>
+  </bone>
+  <skin name="default">
+   <slot name="03di" parent="03di" z="0">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.2" y="-109.5" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_0" parent="03di_0" z="1">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.25" y="-109.45" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_1" parent="03di_1" z="2">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.3" y="-109.5" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_2" parent="03di_2" z="3">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.3" y="-109.45" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_3" parent="03di_3" z="4">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.25" y="-109.4" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_4" parent="03di_4" z="5">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.25" y="-109.4" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_5" parent="03di_5" z="6">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.25" y="-109.4" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_6" parent="03di_6" z="7">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.25" y="-109.4" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_7" parent="03di_7" z="8">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.25" y="-109.4" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="03di_8" parent="03di_8" z="9">
+    <display name="ZC_small01_03di" type="image">
+     <transform x="-187.25" y="-109.45" skX="0" skY="0" scX="1" scY="1" pX="187.7" pY="116.05"/>
+    </display>
+   </slot>
+   <slot name="07a" parent="07a" z="10">
+    <display name="ZC_small01_07a" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="451" pY="307.6"/>
+    </display>
+   </slot>
+   <slot name="07b" parent="07b" z="11">
+    <display name="ZC_small01_07a" type="image">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="451" pY="307.6"/>
+    </display>
+   </slot>
+   <slot name="08a" parent="08a" z="12">
+    <display name="ZC_small01_08a" type="image">
+     <transform x="-0.25" y="0.05" skX="0" skY="0" scX="1" scY="1" pX="164.15" pY="265.7"/>
+    </display>
+   </slot>
+   <slot name="08b" parent="08b" z="13">
+    <display name="ZC_small01_08a" type="image">
+     <transform x="-0.25" y="0.05" skX="0" skY="0" scX="1" scY="1" pX="164.15" pY="265.7"/>
+    </display>
+   </slot>
+  </skin>
+  <animation name="0" fadeInTime="0.3" duration="1" scale="1" loop="1" autoTween="1" tweenEasing="NaN">
+   <timeline name="03di" scale="1" offset="0">
+    <frame z="0" duration="1">
+     <transform x="0" y="0" skX="0" skY="0" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_0" scale="1" offset="0">
+    <frame z="1" duration="1">
+     <transform x="0.05" y="0" skX="36" skY="36" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_1" scale="1" offset="0">
+    <frame z="2" duration="1">
+     <transform x="0.05" y="0" skX="72" skY="72" scX="1" scY="1" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_2" scale="1" offset="0">
+    <frame z="3" duration="1">
+     <transform x="0.05" y="0" skX="108.02" skY="108.02" scX="0.999" scY="0.999" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_3" scale="1" offset="0">
+    <frame z="4" duration="1">
+     <transform x="0.1" y="0" skX="144.13" skY="144.13" scX="0.9974" scY="0.9974" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_4" scale="1" offset="0">
+    <frame z="5" duration="1">
+     <transform x="0.1" y="0" skX="-179.97" skY="-179.97" scX="0.9974" scY="0.9974" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_5" scale="1" offset="0">
+    <frame z="6" duration="1">
+     <transform x="0.1" y="0" skX="-143.93" skY="-143.93" scX="0.9958" scY="0.9958" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_6" scale="1" offset="0">
+    <frame z="7" duration="1">
+     <transform x="0.1" y="0" skX="-107.81" skY="-107.81" scX="0.9948" scY="0.9948" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_7" scale="1" offset="0">
+    <frame z="8" duration="1">
+     <transform x="0.05" y="0" skX="-71.93" skY="-71.93" scX="0.9939" scY="0.9939" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="03di_8" scale="1" offset="0">
+    <frame z="9" duration="1">
+     <transform x="0.05" y="0" skX="-36.84" skY="-35.86" scX="0.9923" scY="0.9924" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="07a" scale="1" offset="0">
+    <frame z="10" duration="1">
+     <transform x="-78.8" y="-172.05" skX="0" skY="0" scX="0.6184" scY="0.6184" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="07b" scale="1" offset="0">
+    <frame z="11" duration="1">
+     <transform x="80.1" y="169.35" skX="180" skY="180" scX="0.6184" scY="0.6184" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="08a" scale="1" offset="0">
+    <frame z="12" duration="1">
+     <transform x="242.85" y="-148.65" skX="0" skY="0" scX="0.6184" scY="0.6184" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+   <timeline name="08b" scale="1" offset="0">
+    <frame z="13" duration="1">
+     <transform x="-244.6" y="147.65" skX="180" skY="180" scX="0.6184" scY="0.6184" pX="0" pY="0"/>
+    </frame>
+   </timeline>
+  </animation>
+ </armature>
+</dragonBones>
