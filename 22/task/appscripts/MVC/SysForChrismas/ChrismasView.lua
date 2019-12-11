@@ -1,12 +1,25 @@
-local BaseData = requirePack("appscripts.MVC.Base.BaseView");
+local PathsUtil = requirePack("appscripts.Utils.PathsUtil"); 
+local SpriteUtil = requirePack("appscripts.Utils.SpriteUtil"); 
 
-local EmptyView = class("EmptyView",function() 
-    return BaseData.new();
+local StickerProcessBar = requirePack("appscripts.UI.StickerProcessBar");
+local CarouselItem = requirePack("appscripts.UI.CarouselItem");
+
+
+local BaseView = requirePack("appscripts.MVC.Base.BaseView");
+
+
+local ChrismasView = class("ChrismasView",function() 
+    return BaseView.new();
 end);
-g_tConfigTable.CREATE_NEW(EmptyView);
+g_tConfigTable.CREATE_NEW(ChrismasView);
 
-function EmptyView:ctor()
+function ChrismasView:ctor()
     -- 定义所有使用过的成员在这里..
+    self.spBg_ = nil ;                    -- 背景图
+    self.processBar_ = nil;               -- 进度条
+
+    self.btnNext_ = nil;                  -- 下一步按钮
+    
 end
 
 --[[
@@ -15,8 +28,81 @@ end
         创建所有需要的显示对象 
         注册所有要使用的UI事件
 ]]--
-function EmptyView:Init()
+function ChrismasView:Init()
 
+    
+
+    self.spBg_ = SpriteUtil.Create( PathsUtil.ImagePath("bg.png"));
+    self:addChild(self.spBg_);
+    self.spBg_:setPosition(cc.p(768/2,1024/2));
+    --print("scale:"..g_tConfigTable.ScaleMultiple)
+    self.spBg_:setScale(1);
+
+    self.processBar_ = StickerProcessBar.new();
+    self.processBar_:Init(
+        PathsUtil.ImagePath("gui_granule.png"),
+        PathsUtil.ImagePath("gui_granule_bg.png"),
+        PathsUtil.ImagePath("gui_progress_bg.png"),
+        1,
+        4,
+        12,
+        0
+    );
+    self:addChild(self.processBar_);
+    self.processBar_:setPosition(SpriteUtil.ToCocosPoint(131,203));--SpriteUtil.ToCocosPoint(131,7)
+
+    local spStarIconBg = SpriteUtil.Create( PathsUtil.ImagePath("gui_acquire_icon_bg.png"));
+    local spStarIcon = SpriteUtil.Create( PathsUtil.ImagePath("gui_acquire_icon.png"));
+    self:addChild(spStarIconBg);
+    self:addChild(spStarIcon);
+    spStarIconBg:setPosition(SpriteUtil.ToCocosPoint(380,203));
+    spStarIcon:setPosition(SpriteUtil.ToCocosPoint(380,203));
+
+--[[
+    ccui.Button:create(imgPath,imgPath);
+	enterBtn:setScale(23)
+	enterBtn:setAnchorPoint(cc.p(0.5,0.5));
+	enterBtn:setPosition(cc.p(470,420));
+	enterBtn:setPressedActionEnabled(true)  
+	enterBtn:setSwallowTouches(false);   
+	self:addChild(enterBtn,100001);
+	enterBtn:addClickEventListener(function()		
+		finger:removeFromParent()
+		enterBtn:removeFromParent()
+		self:stopAllActions()
+		self:showOPOver(callBack)
+    end)
+    
+    Carousel
+]]--
+    self.btnNext_ =  ccui.Button:create( 
+        PathsUtil.ImagePath("gui_next_icon.png"), 
+        PathsUtil.ImagePath("gui_next_icon.png"));
+    self.btnNext_:setScale(0.42);--debug
+    self:addChild(self.btnNext_,100001);
+    self.btnNext_:setPosition(SpriteUtil.ToCocosPoint(375,723));
+    self.btnNext_:addClickEventListener(function()	
+        -- todo on user click next
+        print("self.btnNext_ next");	
+    end)
+    
+    self.carouselBg_ = SpriteUtil.Create(PathsUtil.ImagePath("gui_UI_bg.png"));
+    self.carouselBg_:setPosition(SpriteUtil.ToCocosPoint(375,1000));
+    self:addChild(self.carouselBg_);
+
+    --[[
+    local testItem = CarouselItem.new();
+    testItem:Init(
+        PathsUtil.ImagePath("gui_default.png"),
+        PathsUtil.ImagePath("gui_select01.png"),
+        PathsUtil.ImagePath("gui_heka01_vip.png"),
+        PathsUtil.ImagePath("gui_vip_icon.png"),
+        PathsUtil.ImagePath("gui_needover.png")
+    );
+    self:addChild(testItem);
+    testItem:setPosition(cc.p(200,200));
+    testItem:UnSelect();
+    ]]--
 end
 
 --[[
@@ -25,8 +111,8 @@ end
         删除所有持有的显示对象 
         注销所有持有的UI事件
 ]]--
-function EmptyView:Dispose()
+function ChrismasView:Dispose()
 
 end
 
-return EmptyView;
+return ChrismasView;

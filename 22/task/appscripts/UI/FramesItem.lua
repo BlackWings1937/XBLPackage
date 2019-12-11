@@ -5,6 +5,8 @@
     并且它会用拿到的最大的图片，设置自身contentsize大小
 ]]--
 
+local SpriteUtil = requirePack("appscripts.Utils.SpriteUtil"); 
+
 local FramesItem = class("FramesItem",function() 
     return cc.Node:create();
 end)
@@ -24,16 +26,17 @@ function FramesItem:Init(list)
         local countOfList = #list;
         local contentSize = cc.size(0,0);
         for i = 1,countOfList,1 do 
-            local sp = cc.Sprite:create(list[i]);
+            local sp = SpriteUtil.Create(list[i]);
             self:addChild(sp);
             sp:setVisible(false);
-            local spContentSize = sp:getContentSize();
+            local spContentSize = SpriteUtil.GetContentSize(sp);-- sp:getContentSize();
             if spContentSize.width > contentSize.width then 
                 contentSize.width = spContentSize.width ;
             end
             if spContentSize.height > contentSize.height then 
                 contentSize.height = spContentSize.height ;
             end
+            table.insert(self.listOfFrames_,sp);
         end
         self:setContentSize(contentSize);
         self:Index(1);

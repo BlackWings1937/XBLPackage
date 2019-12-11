@@ -28,7 +28,7 @@ function XiaLingYingLayer:start(sSdPath)
 		"191225_rukou",
 		"191225_rukoudeng3xj",
 		"191225_rukoudeng2");
-	self:setActivityStartTime(2019,12,14,0,0,0);           -- 设置活动开始日期
+	self:setActivityStartTime(2019,12,3,0,0,0);           -- 设置活动开始日期
 
 	ActivityBaseLayer.start(self,sSdPath);                -- 调用基类启动方法
 end

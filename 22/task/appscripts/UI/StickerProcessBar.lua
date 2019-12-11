@@ -3,6 +3,8 @@
     意思就是用数个贴纸表示进度-[可以在示例项目中找到使用例子]-
 ]]--
 
+local SpriteUtil = requirePack("appscripts.Utils.SpriteUtil"); 
+
 local FramesItem = requirePack("appscripts.UI.FramesItem");
 
 local StickerProcessBar = class("StickerProcessBar",function()
@@ -27,6 +29,7 @@ function StickerProcessBar:caculatePosForHorizonMode(item)
     local contentSize = item:getContentSize();
     local pos = cc.pAdd(self.rearPos_,cc.p(contentSize.width/2,0));
     self.rearPos_ = cc.pAdd(self.rearPos_,cc.p(contentSize.width+self.spacing_,0));
+    dump(pos);
     return pos;
 end
 
@@ -61,18 +64,24 @@ function StickerProcessBar:Init(
 
     self.offset_  = offset;
     self.spacing_ = spacing;
+
+
+    self.spBg_ = SpriteUtil.Create(bgImagePath);
+    self:addChild(self.spBg_);
+    local contentSize = SpriteUtil.GetContentSize(self.spBg_);
+
+
     if mode == StickerProcessBar.EnumType.HORIZONTAL then 
         self.rearPos_ = cc.p(self.offset_,0);
+        self.spBg_:setAnchorPoint(cc.p(0,0.5));
+        self.spBg_:setPosition(cc.p(0,-1));--debug
     else 
         self.rearPos_ = cc.p(0,self.offset_);
+        self.spBg_:setAnchorPoint(cc.p(0.5,0));
+        self.spBg_:setPosition(cc.p(0,0));
     end
 
-
-    self.spBg_ = cc.Sprite:create(bgImagePath);
-    self:addChild(self.spBg_);
-    local contentSize = self.spBg_:getContentSize();
     self:setContentSize(contentSize);
-
     local framesPath = {};
     table.insert( framesPath,onImagePath);
     table.insert( framesPath,offImagePath);
@@ -88,6 +97,8 @@ function StickerProcessBar:Init(
             item:setPosition(self:caculatePosForVerticalMode(item));
         end
     end
+
+    self:UpdateProcessByIndex(2);
 end
 
 --[[
@@ -110,9 +121,9 @@ function StickerProcessBar:UpdateProcessByIndex(index)
     index = math.min(countOfItems,index);
     for i = 1,countOfItems,1 do
         if i<=index then 
-            self.listOfItems_:Index(1);
+            self.listOfItems_[i]:Index(1);
         else 
-            self.listOfItems_:Index(2);
+            self.listOfItems_[i]:Index(2);
         end
     end
 end

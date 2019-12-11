@@ -39,9 +39,16 @@ function t.createAppScene( nFromModule, nToModule, nMenuType, sBagId, sPackPath)
 	print("进入到音频的世界欢迎你！")
 	--
 	local scene = cc.Scene:create()
-	local ShowLayer = requirePack("appscripts.ShowLayer");
-	local showLayer = ShowLayer.new(sSdPath);
-	scene:addChild(showLayer);
+	--local ShowLayer = requirePack("appscripts.ShowLayer");
+	--local showLayer = ShowLayer.new(sSdPath);
+	--scene:addChild(showLayer);
+
+	local RootNode = requirePack("appscripts.RootNode");
+	local n = RootNode.new();
+	scene:addChild(n);
+
+	--local ChrismasController = requirePack("appscripts.MVC.SysForChrismas.ChrismasController");
+	
 	-- 返回创建中的场景
 	return scene
 end

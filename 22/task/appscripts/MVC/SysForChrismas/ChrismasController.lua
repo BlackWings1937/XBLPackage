@@ -1,13 +1,19 @@
+
+
+local ChrismasView = requirePack("appscripts.MVC.SysForChrismas.ChrismasView");
+local ChrismasData = requirePack("appscripts.MVC.SysForChrismas.ChrismasData");
+
 local BaseController = requirePack("appscripts.MVC.Base.BaseController");
 
 
-local EmptyController = class("EmptyController",function() 
+local ChrismasController = class("ChrismasController",function() 
     return BaseController.new();
 end);
-g_tConfigTable.CREATE_NEW(EmptyController);
+g_tConfigTable.CREATE_NEW(ChrismasController);
 
-function EmptyController:ctor()
+function ChrismasController:ctor()
     -- 定义所有使用过的成员在这里..
+    self.rootNode_ = nil;                --玩法根节点
 end
 
 --[[
@@ -15,9 +21,22 @@ end
     初始化:
         View
         data
+    参数:
+    rootNode:sys根节点
 ]]--
-function EmptyController:Start()
+function ChrismasController:Start(rootNode)
+    self.rootNode_ = rootNode;
 
+    self:setView(ChrismasView.new());--
+    self:setData(ChrismasData.new());--
+    dump(self:getView());
+    local x,y = self:getView():getPosition();
+    print("x:"..x);
+    print("y:"..y);
+    self.rootNode_:addChild(self:getView());
+
+    self:getView():Init();
+    self:getData():Init();
 end
 
 --[[
@@ -26,8 +45,9 @@ end
         View
         data
 ]]--
-function EmptyController:Stop()
-
+function ChrismasController:Stop()
+    self:getView():Dispose();
+    self:getData():Dispose();
 end
 
-return EmptyController;
+return ChrismasController;

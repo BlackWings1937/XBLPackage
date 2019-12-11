@@ -6,7 +6,9 @@
     Update  方法 根据数据 更新所有相关界面 显示对象 
 ]]--
 
-local BaseView = class("BaseView");
+local BaseView = class("BaseView",function()
+    return cc.Node:create();
+end);
 g_tConfigTable.CREATE_NEW(BaseView);
 
 function BaseView:Init()

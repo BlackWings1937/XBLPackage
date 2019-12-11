@@ -1,1 +1,977 @@
-{"id":2,"name":"Xmas_bg2","common":{"frameRate":24,"totalDuration":1},"sceneInfo":{"width":768,"height":1024},"layers":[{"id":26,"layername":"camera","framestype":"element","frames":[{"frameid":0,"z":26,"einfo":{"ename":"camera_fix","x":384,"y":512,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":25,"layername":"npc_zuobiao","framestype":"element","frames":[{"frameid":0,"z":25,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"3","x":389.1,"y":400.1,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":24,"layername":"npc_991","framestype":"element","frames":[{"frameid":0,"z":24,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"3","x":393.7,"y":130.9,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":23,"layername":"bg_riqi1","framestype":"pic","frames":[{"frameid":0,"z":23,"einfo":{"ename":"gui_countdown_bg.png","x":279.9,"y":115,"sx":0.4269866943359375,"sy":0.4269866943359375,"rot":0,"skewX":0,"skewY":0,"colorM":{},"colorO":{}},"mending":false,"dt":1}]},{"id":22,"layername":"npc_tx","framestype":"element","frames":[{"frameid":0,"z":22,"einfo":{"ename":"191225_kong","eitem":"0","x":444.6,"y":384.4,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":21,"layername":"npc_lihe","framestype":"element","frames":[{"frameid":0,"z":21,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"4","x":312.7,"y":412.8,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":20,"layername":"npc_daoju01","framestype":"element","frames":[{"frameid":0,"z":20,"einfo":{"ename":"191225yrdj01","eitem":"1","x":238.9,"y":620.1,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":19,"layername":"npc_daoju02","framestype":"element","frames":[{"frameid":0,"z":19,"einfo":{"ename":"191225yrdj02","eitem":"1","x":505.1,"y":604.3,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":18,"layername":"npc_daoju03","framestype":"element","frames":[{"frameid":0,"z":18,"einfo":{"ename":"191225yrdj03","eitem":"1","x":276.8,"y":522.8,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":17,"layername":"npc_daoju04","framestype":"element","frames":[{"frameid":0,"z":17,"einfo":{"ename":"191225yrdj04","eitem":"1","x":460.7,"y":485.4,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":16,"layername":"npc_daoju05","framestype":"element","frames":[{"frameid":0,"z":16,"einfo":{"ename":"191225yr_mb5_mov","eitem":"1","x":313,"y":414.1,"sx":0.6799774169921875,"sy":0.6799774169921875,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":15,"layername":"npc_daoju06","framestype":"element","frames":[{"frameid":0,"z":15,"einfo":{"ename":"191225yr_mb6_mov","eitem":"1","x":446.2,"y":387.6,"sx":1.0499725341796875,"sy":1.0499725341796875,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":14,"layername":"npc_daoju07","framestype":"element","frames":[{"frameid":0,"z":14,"einfo":{"ename":"191225yr_mb7_mov","eitem":"1","x":382.1,"y":263.3,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":13,"layername":"bg_riqi2","framestype":"pic","frames":[{"frameid":0,"z":13,"einfo":{"ename":"12_20.png","x":349,"y":311,"sx":0.4269866943359375,"sy":0.4269866943359375,"rot":0,"skewX":0,"skewY":0,"colorM":{},"colorO":{}},"mending":false,"dt":1}]},{"id":12,"layername":"vip_deng","framestype":"element","frames":[{"frameid":0,"z":12,"einfo":{"ename":"191225yrvip_xx","eitem":"2","x":354,"y":603,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":11,"layername":"npc_xbl","framestype":"element","frames":[{"frameid":0,"z":11,"einfo":{"ename":"XBL2019_ZH_type2","eitem":"0","x":496.4,"y":811.3,"sx":0.53497314453125,"sy":0.53497314453125,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":10,"layername":"npc_daoju1","framestype":"element","frames":[{"frameid":0,"z":10,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"0","x":238.9,"y":620.1,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":9,"layername":"npc_daoju2","framestype":"element","frames":[{"frameid":0,"z":9,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"0","x":505.1,"y":604.3,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":8,"layername":"npc_daoju3","framestype":"element","frames":[{"frameid":0,"z":8,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"0","x":276.8,"y":522.8,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":7,"layername":"npc_daoju4","framestype":"element","frames":[{"frameid":0,"z":7,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"0","x":460.7,"y":485.4,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":6,"layername":"npc_daoju5","framestype":"element","frames":[{"frameid":0,"z":6,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"0","x":312.7,"y":412.8,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":5,"layername":"npc_daoju6","framestype":"element","frames":[{"frameid":0,"z":5,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"0","x":446.3,"y":387.8,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":4,"layername":"npc_daoju7","framestype":"element","frames":[{"frameid":0,"z":4,"einfo":{"ename":"20191101wsyyr_ui_lihe_mov","eitem":"0","x":382.1,"y":263.3,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":3,"layername":"npc_lu","framestype":"element","frames":[{"frameid":0,"z":3,"einfo":{"ename":"191225yr_lu","eitem":"0","x":393.1,"y":473.4,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":2,"layername":"npc_bgdeng","framestype":"element","frames":[{"frameid":0,"z":2,"einfo":{"ename":"191225yr_bgcaideng","eitem":"0","x":386.4,"y":495.4,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":1,"layername":"npc_shu","framestype":"element","frames":[{"frameid":0,"z":1,"einfo":{"ename":"191225yr_shu_mov","eitem":"0","x":389.3,"y":497.3,"sx":0.899993896484375,"sy":0.9856109619140625,"rot":0,"skewX":0,"skewY":0,"colorMode":"none","colorM":{"r":100,"g":100,"b":100,"a":100},"colorO":{"r":0,"g":0,"b":0,"a":0}},"mending":false,"dt":1}]},{"id":0,"layername":"bg","framestype":"pic","frames":[{"frameid":0,"z":0,"einfo":{"ename":"bg.jpg","x":0,"y":0,"sx":1,"sy":1,"rot":0,"skewX":0,"skewY":0,"colorM":{},"colorO":{}},"mending":false,"dt":1}]}],"VersionID":"20191127"}
+{
+    "id": 2,
+    "name": "Xmas_bg2",
+    "common": {
+        "frameRate": 24,
+        "totalDuration": 1
+    },
+    "sceneInfo": {
+        "width": 768,
+        "height": 1024
+    },
+    "layers": [
+        {
+            "id": 26,
+            "layername": "camera",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 26,
+                    "einfo": {
+                        "ename": "camera_fix",
+                        "x": 384,
+                        "y": 512,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "layername": "npc_zuobiao",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 25,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "3",
+                        "x": 389.1,
+                        "y": 400.1,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "layername": "npc_991",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 24,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "3",
+                        "x": 393.7,
+                        "y": 130.9,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "layername": "bg_riqi1",
+            "framestype": "pic",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 23,
+                    "einfo": {
+                        "ename": "gui_countdown_bg.png",
+                        "x": 279.9,
+                        "y": 115,
+                        "sx": 0.4269866943359375,
+                        "sy": 0.4269866943359375,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorM": {},
+                        "colorO": {}
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "layername": "npc_tx",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 22,
+                    "einfo": {
+                        "ename": "191225_kong",
+                        "eitem": "0",
+                        "x": 444.6,
+                        "y": 384.4,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "layername": "npc_lihe",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 21,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "4",
+                        "x": 312.7,
+                        "y": 412.8,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "layername": "npc_daoju01",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 20,
+                    "einfo": {
+                        "ename": "191225yrdj01",
+                        "eitem": "1",
+                        "x": 238.9,
+                        "y": 620.1,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "layername": "npc_daoju02",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 19,
+                    "einfo": {
+                        "ename": "191225yrdj02",
+                        "eitem": "1",
+                        "x": 505.1,
+                        "y": 604.3,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "layername": "npc_daoju03",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 18,
+                    "einfo": {
+                        "ename": "191225yrdj03",
+                        "eitem": "1",
+                        "x": 276.8,
+                        "y": 522.8,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "layername": "npc_daoju04",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 17,
+                    "einfo": {
+                        "ename": "191225yrdj04",
+                        "eitem": "1",
+                        "x": 460.7,
+                        "y": 485.4,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "layername": "npc_daoju05",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 16,
+                    "einfo": {
+                        "ename": "191225yr_mb5_mov",
+                        "eitem": "1",
+                        "x": 313,
+                        "y": 414.1,
+                        "sx": 0.6799774169921875,
+                        "sy": 0.6799774169921875,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "layername": "npc_daoju06",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 15,
+                    "einfo": {
+                        "ename": "191225yr_mb6_mov",
+                        "eitem": "1",
+                        "x": 446.2,
+                        "y": 387.6,
+                        "sx": 1.0499725341796875,
+                        "sy": 1.0499725341796875,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "layername": "npc_daoju07",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 14,
+                    "einfo": {
+                        "ename": "191225yr_mb7_mov",
+                        "eitem": "1",
+                        "x": 382.1,
+                        "y": 263.3,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "layername": "bg_riqi2",
+            "framestype": "pic",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 13,
+                    "einfo": {
+                        "ename": "12_20.png",
+                        "x": 349,
+                        "y": 311,
+                        "sx": 0.4269866943359375,
+                        "sy": 0.4269866943359375,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorM": {},
+                        "colorO": {}
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "layername": "vip_deng",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 12,
+                    "einfo": {
+                        "ename": "191225yrvip_xx",
+                        "eitem": "2",
+                        "x": 354,
+                        "y": 603,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "layername": "npc_xbl",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 11,
+                    "einfo": {
+                        "ename": "XBL2019_ZH_type2",
+                        "eitem": "0",
+                        "x": 496.4,
+                        "y": 811.3,
+                        "sx": 0.53497314453125,
+                        "sy": 0.53497314453125,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "layername": "npc_daoju1",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 10,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "0",
+                        "x": 238.9,
+                        "y": 620.1,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "layername": "npc_daoju2",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 9,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "0",
+                        "x": 505.1,
+                        "y": 604.3,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "layername": "npc_daoju3",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 8,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "0",
+                        "x": 276.8,
+                        "y": 522.8,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "layername": "npc_daoju4",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 7,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "0",
+                        "x": 460.7,
+                        "y": 485.4,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "layername": "npc_daoju5",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 6,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "0",
+                        "x": 312.7,
+                        "y": 412.8,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "layername": "npc_daoju6",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 5,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "0",
+                        "x": 446.3,
+                        "y": 387.8,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "layername": "npc_daoju7",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 4,
+                    "einfo": {
+                        "ename": "20191101wsyyr_ui_lihe_mov",
+                        "eitem": "0",
+                        "x": 382.1,
+                        "y": 263.3,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "layername": "npc_lu",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 3,
+                    "einfo": {
+                        "ename": "191225yr_lu",
+                        "eitem": "0",
+                        "x": 393.1,
+                        "y": 473.4,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "layername": "npc_bgdeng",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 2,
+                    "einfo": {
+                        "ename": "191225yr_bgcaideng",
+                        "eitem": "0",
+                        "x": 386.4,
+                        "y": 495.4,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "layername": "npc_shu",
+            "framestype": "element",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 1,
+                    "einfo": {
+                        "ename": "191225yr_shu_mov",
+                        "eitem": "0",
+                        "x": 389.3,
+                        "y": 497.3,
+                        "sx": 0.899993896484375,
+                        "sy": 0.9856109619140625,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorMode": "none",
+                        "colorM": {
+                            "r": 100,
+                            "g": 100,
+                            "b": 100,
+                            "a": 100
+                        },
+                        "colorO": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 0
+                        }
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        },
+        {
+            "id": 0,
+            "layername": "bg",
+            "framestype": "pic",
+            "frames": [
+                {
+                    "frameid": 0,
+                    "z": 0,
+                    "einfo": {
+                        "ename": "bg.jpg",
+                        "x": 0,
+                        "y": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "rot": 0,
+                        "skewX": 0,
+                        "skewY": 0,
+                        "colorM": {},
+                        "colorO": {}
+                    },
+                    "mending": false,
+                    "dt": 1
+                }
+            ]
+        }
+    ],
+    "VersionID": "20191127"
+}

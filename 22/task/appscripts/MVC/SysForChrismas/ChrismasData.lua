@@ -1,12 +1,12 @@
 local BaseData = requirePack("appscripts.MVC.Base.BaseData");
 
 
-local EmptyData = class("EmptyData",function() 
+local ChrismasData = class("ChrismasData",function() 
     return BaseData.new();
 end);
-g_tConfigTable.CREATE_NEW(EmptyData);
+g_tConfigTable.CREATE_NEW(ChrismasData);
 
-function EmptyData:ctor()
+function ChrismasData:ctor()
     -- 定义所有使用过的成员在这里..
 end
 
@@ -16,7 +16,7 @@ end
         本地
         服务器
 ]]--
-function EmptyData:Init()
+function ChrismasData:Init()
 
 end
 
@@ -26,8 +26,8 @@ end
         本地
         服务器
 ]]--
-function EmptyData:Dispose()
+function ChrismasData:Dispose()
 
 end
 
-return EmptyData;
+return ChrismasData;
