@@ -1,6 +1,7 @@
 
 local SpriteUtil = requirePack("appscripts.Utils.SpriteUtil");
 local PathsUtil = requirePack("appscripts.Utils.PathsUtil"); 
+local ButtonUtil = requirePack("appscripts.Utils.ButtonUtil"); 
 
 local FramesItem = requirePack("appscripts.UI.FramesItem");
 local SelectItem = requirePack("appscripts.UI.Base.SelectGroup.SelectItem");
@@ -50,27 +51,30 @@ function CarouselItem:Init(
     local cs = self.fiOfSelect_:getContentSize();
     self:setContentSize(cs);
 
-    self.spIcon_ = ccui.Button:create( 
+    self.spIcon_ = ButtonUtil.Create( 
         iconPath, 
-        iconPath
+        iconPath,function(b)
+            -- todo on user click next
+            print("self.spIcon_");	
+            self:getGroup():OnItemClick(self);
+        end
     );
     self:addChild(self.spIcon_);
-    self.spIcon_:addClickEventListener(function()	
-        -- todo on user click next
-        print("self.spIcon_");	
-    end)
-
+    local btnSize =SpriteUtil.GetContentSize( self.spIcon_) ;
+    btnSize.width = btnSize.width*0.7;
+    btnSize.height = btnSize.height*0.7;
+    
     self.spVipIcon_ = SpriteUtil.Create(
         vipIconPath
     );
     self:addChild(self.spVipIcon_);
-    self.spVipIcon_:setPosition(cc.p(-cs.width/2,cs.height/2));
+    self.spVipIcon_:setPosition(cc.p(-btnSize.width/2,btnSize.height/2));
 
     self.spSelectPreIcon_ = SpriteUtil.Create(
         selectPreIconPath
     );
     self:addChild(self.spSelectPreIcon_);
-    self.spSelectPreIcon_:setPosition(cc.p(cs.width/2,-cs.height/2));
+    self.spSelectPreIcon_:setPosition(cc.p(btnSize.width/2,-btnSize.height/2));
 
 end
 

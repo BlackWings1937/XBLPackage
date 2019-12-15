@@ -1,8 +1,10 @@
 local PathsUtil = requirePack("appscripts.Utils.PathsUtil"); 
 local SpriteUtil = requirePack("appscripts.Utils.SpriteUtil"); 
+local ButtonUtil = requirePack("appscripts.Utils.ButtonUtil"); 
 
 local StickerProcessBar = requirePack("appscripts.UI.StickerProcessBar");
 local CarouselItem = requirePack("appscripts.UI.CarouselItem");
+local CarouselGroup = requirePack("appscripts.UI.CarouselGroup");
 
 
 local BaseView = requirePack("appscripts.MVC.Base.BaseView");
@@ -30,13 +32,21 @@ end
 ]]--
 function ChrismasView:Init()
 
-    
 
     self.spBg_ = SpriteUtil.Create( PathsUtil.ImagePath("bg.png"));
     self:addChild(self.spBg_);
     self.spBg_:setPosition(cc.p(768/2,1024/2));
-    --print("scale:"..g_tConfigTable.ScaleMultiple)
     self.spBg_:setScale(1);
+
+    self.backBtn_ = ButtonUtil.Create(
+        PathsUtil.ImagePath("gui_next_icon.png"), 
+        PathsUtil.ImagePath("gui_next_icon.png"),
+        function()
+            print("backbtn..."); 
+        end
+    );
+    self:addChild(self.backBtn_);
+    self.backBtn_:setPosition(cc.p(30,1024-30));
 
     self.processBar_ = StickerProcessBar.new();
     self.processBar_:Init(
@@ -58,23 +68,6 @@ function ChrismasView:Init()
     spStarIconBg:setPosition(SpriteUtil.ToCocosPoint(380,203));
     spStarIcon:setPosition(SpriteUtil.ToCocosPoint(380,203));
 
---[[
-    ccui.Button:create(imgPath,imgPath);
-	enterBtn:setScale(23)
-	enterBtn:setAnchorPoint(cc.p(0.5,0.5));
-	enterBtn:setPosition(cc.p(470,420));
-	enterBtn:setPressedActionEnabled(true)  
-	enterBtn:setSwallowTouches(false);   
-	self:addChild(enterBtn,100001);
-	enterBtn:addClickEventListener(function()		
-		finger:removeFromParent()
-		enterBtn:removeFromParent()
-		self:stopAllActions()
-		self:showOPOver(callBack)
-    end)
-    
-    Carousel
-]]--
     self.btnNext_ =  ccui.Button:create( 
         PathsUtil.ImagePath("gui_next_icon.png"), 
         PathsUtil.ImagePath("gui_next_icon.png"));
@@ -89,20 +82,45 @@ function ChrismasView:Init()
     self.carouselBg_ = SpriteUtil.Create(PathsUtil.ImagePath("gui_UI_bg.png"));
     self.carouselBg_:setPosition(SpriteUtil.ToCocosPoint(375,1000));
     self:addChild(self.carouselBg_);
+    local ccc = SpriteUtil.GetContentSize(self.carouselBg_ );
+    print("ccc:" .. ccc.width .. "height:" .. ccc.height);
 
-    --[[
-    local testItem = CarouselItem.new();
-    testItem:Init(
-        PathsUtil.ImagePath("gui_default.png"),
-        PathsUtil.ImagePath("gui_select01.png"),
-        PathsUtil.ImagePath("gui_heka01_vip.png"),
-        PathsUtil.ImagePath("gui_vip_icon.png"),
-        PathsUtil.ImagePath("gui_needover.png")
+
+    --[[]]--
+    self.carouselGroup_ = CarouselGroup.new();
+    self.carouselGroup_:SetOffset(2);
+    self.carouselGroup_:SetSpacing(30);
+    self.carouselGroup_:SetItemSize(cc.size(160,160));
+    self.carouselGroup_:SetSpeed(100);
+    self.carouselGroup_:SetCreateItemCallBack(function(d)
+        local item = CarouselItem.new();
+        item:SetData(d)
+        item:Init(
+            PathsUtil.ImagePath("gui_default.png"),
+            PathsUtil.ImagePath("gui_select01.png"),
+            PathsUtil.ImagePath(d.iconName),
+            PathsUtil.ImagePath("gui_vip_icon.png"),
+            PathsUtil.ImagePath("gui_needover.png")
+        );
+        
+        return item;
+    end);
+    self:addChild(self.carouselGroup_);
+    self.carouselGroup_:setPosition(cc.p(0,80));
+    self.carouselGroup_:Update(
+        {
+            {iconName = "gui_heka01_vip.png"},
+            {iconName = "gui_heka02.png"},
+            {iconName = "gui_heka03.png"},
+            {iconName = "gui_heka04.png"},
+        }
     );
-    self:addChild(testItem);
-    testItem:setPosition(cc.p(200,200));
-    testItem:UnSelect();
-    ]]--
+    self.carouselGroup_:startMove();
+    self.carouselGroup_:SetOnUserSelectItemCallBack(function(item)
+        print("item click");
+        dump(self:GetData());
+    end);
+
 end
 
 --[[
@@ -116,3 +134,15 @@ function ChrismasView:Dispose()
 end
 
 return ChrismasView;
+
+
+    --[[
+    local item = CarouselItem.new();
+    item:Init(
+        PathsUtil.ImagePath("gui_default.png"),
+        PathsUtil.ImagePath("gui_select01.png"),
+        PathsUtil.ImagePath("gui_heka01_vip.png"),
+        PathsUtil.ImagePath("gui_vip_icon.png"),
+        PathsUtil.ImagePath("gui_needover.png"));
+    self:addChild(item);
+    item:setPosition(cc.p(200,200));]]--

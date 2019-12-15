@@ -29,7 +29,8 @@ function FramesItem:Init(list)
             local sp = SpriteUtil.Create(list[i]);
             self:addChild(sp);
             sp:setVisible(false);
-            local spContentSize = SpriteUtil.GetContentSize(sp);-- sp:getContentSize();
+            local spContentSize = SpriteUtil.GetContentSize(sp);
+
             if spContentSize.width > contentSize.width then 
                 contentSize.width = spContentSize.width ;
             end
@@ -38,6 +39,7 @@ function FramesItem:Init(list)
             end
             table.insert(self.listOfFrames_,sp);
         end
+
         self:setContentSize(contentSize);
         self:Index(1);
     end

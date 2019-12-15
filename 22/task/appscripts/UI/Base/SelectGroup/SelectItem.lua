@@ -6,6 +6,15 @@ g_tConfigTable.CREATE_NEW(SelectItem);
 
 function SelectItem:ctor()
     self.parent_ = nil;
+    self.data_ = nil;
+end
+
+function SelectItem:SetData(d)
+    self.data_ = d;
+end
+
+function SelectItem:GetData()
+    return self.data_;
 end
 
 function SelectItem:Selected()
