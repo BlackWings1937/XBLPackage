@@ -106,6 +106,18 @@ function CarouselGroup:caculateHeadIndexByPos(pos)
     return headIndex;
 end
 
+function CarouselGroup:setItemsIsSelected(isSelected)
+    local count = #self.listOfItems_;
+    for i = 1,count,1 do 
+        local item = self.listOfItems_[i];
+        if isSelected then 
+            item:Selected();
+        else
+            item:UnSelect();
+        end
+    end
+end
+
 --[[
     getposByIndex()
     getItemposFirstIndexwho
@@ -114,6 +126,12 @@ end
     update every one pos
 ]]--
 function CarouselGroup:OnItemClick(item)
+    self:setItemsIsSelected(false);
+
+    if item ~= nil then
+        item:Selected();
+    end
+    
     if self.cbOfUserClickItem_ ~= nil then 
         self.cbOfUserClickItem_(item);
     end
@@ -136,7 +154,8 @@ function CarouselGroup:Update(list)
         item:setGroup(self);
         self.content_:addChild(item);
         table.insert(self.listOfItems_,item);
-        --item:setGroup(self);
+        item:setGroup(self);
+        item:UnSelect();
     end
     self:updateContentPos(cc.p(0,0));
 end

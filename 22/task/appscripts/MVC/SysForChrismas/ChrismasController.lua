@@ -29,14 +29,22 @@ function ChrismasController:Start(rootNode)
 
     self:setView(ChrismasView.new());--
     self:setData(ChrismasData.new());--
-    dump(self:getView());
-    local x,y = self:getView():getPosition();
-    print("x:"..x);
-    print("y:"..y);
+    
     self.rootNode_:addChild(self:getView());
+
+    self:getView():setController(self);
+    self:getData():setController(self);
 
     self:getView():Init();
     self:getData():Init();
+
+    self:getData():SetUpdateDataCallBack(
+        function(d) 
+            self:getView():Update(d);
+        end
+    );
+
+    self:getData():UpdateData();
 end
 
 --[[
@@ -48,6 +56,17 @@ end
 function ChrismasController:Stop()
     self:getView():Dispose();
     self:getData():Dispose();
+end
+
+
+--[[
+    用户点击某一个装饰item
+]]--
+function ChrismasController:OnUserSelectDecorationItem(item)
+    local step = self:getData():GetData().DecorationStep;
+    self:getData():SetUserDecorationOptionsByStepAndIndex(step,item:GetData().index);
+    self:getView():ShowItemFlyToAimByItem(item);
+    self:getView():ShowNextBtn();
 end
 
 return ChrismasController;

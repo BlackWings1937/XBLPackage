@@ -8,9 +8,28 @@
 local BaseData = class("BaseData");
 g_tConfigTable.CREATE_NEW(BaseData);
 
-function BaseData:ctor()
+function BaseData:ctor() 
     self.cbOfUpdateData_ = nil;                                                                -- 更新数据的回掉方法
     self.data_           = nil;                                                                -- 用来更新界面的数据
+    self.controller_ = nil;
+
+end
+
+
+function BaseData:setController(v)
+    self.controller_ = v;
+end
+
+function BaseData:getController()
+    return self.controller_;
+end
+
+function BaseData:setData(d)
+    self.data_ = d;
+end
+
+function BaseData:GetData()
+    return self.data_;
 end
 
 --[[

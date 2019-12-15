@@ -11,6 +11,18 @@ local BaseView = class("BaseView",function()
 end);
 g_tConfigTable.CREATE_NEW(BaseView);
 
+function BaseView:ctor()
+    self.controller_ = nil;
+end
+
+function BaseView:setController(v)
+    self.controller_ = v;
+end
+
+function BaseView:getController()
+    return self.controller_;
+end
+
 function BaseView:Init()
 
 end

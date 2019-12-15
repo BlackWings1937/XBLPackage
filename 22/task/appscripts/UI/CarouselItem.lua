@@ -76,6 +76,16 @@ function CarouselItem:Init(
     self:addChild(self.spSelectPreIcon_);
     self.spSelectPreIcon_:setPosition(cc.p(btnSize.width/2,-btnSize.height/2));
 
+    
+end
+
+function CarouselItem:SetData(d)
+    SelectItem.SetData(self,d);
+    
+    if self.spVipIcon_ ~= nil then 
+        self.spVipIcon_:setVisible(d.VipItem);
+    end
+    
 end
 
 
